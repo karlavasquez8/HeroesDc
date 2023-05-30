@@ -1,13 +1,41 @@
 * {
     margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    font-family: Roboto, sans-serif;
 }
+
 
 :root {
     --color-primario: rgba(0, 102, 159, 1)
 }
 
 body {
+    width: 100%;
+    overflow-x: hidden
+}
+
+header {
+    background-color: #1cd1b0;
+    width: 100%;
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.title-pag {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-primario);
+    font-size: 3vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 1;
+}
+
+.container-cards {
     max-width: 1024px;
+    background-color: aqua;
 }
 
 footer {
@@ -17,34 +45,13 @@ footer {
 }
 
 main {
-    max-height: 100vh;
-}
-
-.sale {
-    background-color: rgba(28, 209, 176, 1);
-    height: 38px;
-
-}
-
-.title-pag {
-    background-color: var(--color-primario);
-    width: 100%;
-    height: 100px;
-}
-
-.cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin-inline: 3vw;
+    overflow: visible;
+    height: 100vh;
 }
 
-
-
-.container-card {
-    max-width: 300px;
-    background: url(/img/Copia\ de\ 849bfede3a5193c34ab8a00379e64fa2\ 1.png) no-repeat center center/cover;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.card {
+    background-color: blanchedalmond;
 }
