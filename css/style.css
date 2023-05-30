@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --color-primario: rgba(0, 102, 159, 1)
+}
+
+body {
+    max-width: 1024px;
+}
+
+footer {
+    height: 51px;
+    background-color: var(--color-primario);
+    color: #ffff;
+}
+
+main {
+    max-height: 100vh;
+}
+
+.sale {
+    background-color: rgba(28, 209, 176, 1);
+    height: 38px;
+
+}
+
+.title-pag {
+    background-color: var(--color-primario);
+    width: 100%;
+    height: 100px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container-card {
+    max-width: 300px;
+    background: url(/img/Copia\ de\ 849bfede3a5193c34ab8a00379e64fa2\ 1.png) no-repeat center center/cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
