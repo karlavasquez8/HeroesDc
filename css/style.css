@@ -1,57 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
-    scroll-behavior: smooth;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-}
-
-
-:root {
-    --color-primario: rgba(0, 102, 159, 1)
-}
-
-body {
-    width: 100%;
-    overflow-x: hidden
+    box-sizing: border-box;
+    font-family: 'Roboto', serif, sans-serif;
+    font-weight: 400;
 }
 
 header {
-    background-color: #1cd1b0;
-    width: 100%;
-    font-size: 1.2vw;
-    font-weight: 500;
-    font-size: 14px;
+    background-color: #1CD1B0;
+    padding: 15px 0;
 }
 
-.title-pag {
+header p {
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.heroes {
     position: sticky;
     top: 0;
-    width: 100%;
-    background-color: var(--color-primario);
-    font-size: 3vw;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    z-index: 1;
-}
-
-.container-cards {
-    max-width: 1024px;
-    background-color: aqua;
-}
-
-footer {
-    height: 51px;
-    background-color: var(--color-primario);
-    color: #ffff;
+    background-color: #00669F;
+    padding: 30px 20px;
+    font-size: 40px;
+    box-shadow: 0px 3px 7px -3px rgb(0 0 0);
+    z-index: 10;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 3vw;
-    overflow: visible;
-    height: 100vh;
+    width: 1024px;
+    margin: 0 auto;
 }
 
-.card {
-    background-color: blanchedalmond;
+.box {
+    display: inline-block;
+    width: 300px;
+    margin: 150px 10px;
+    position: relative;
+    box-shadow: 0px 3px 7px -3px rgb(0 0 0);
+
+}
+
+.batman-top {
+    background-image: url(../img/backgroundBadman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    border-radius: 5px;
+}
+
+.corazon {
+    margin: 10px;
+}
+
+.box-bottom {
+    padding: 40px 40px;
+    background-color: #F3F3F3;
+
+}
+
+.selfie {
+    position: absolute;
+    width: 125px;
+    top: 130px;
+    left: 87.5px;
+    border-radius: 65px;
+    box-shadow: 0px 3px 7px -3px rgb(0 0 0);
+}
+
+.box h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+
+}
+
+button {
+    background-color: #00669F;
+    width: 130px;
+    height: 48.52px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 47.5px;
+    color: white;
+    border: none;
+
+}
+
+.harley-top {
+    background-image: url(../img/backgroundHarley.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    border-radius: 5px;
+}
+
+footer {
+    color: white;
+    background-color: #00669F;
+    padding: 16px;
 }
