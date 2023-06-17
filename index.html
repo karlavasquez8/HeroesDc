@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Clase 10</title>
 </head>
 
@@ -12,8 +17,19 @@
         <p>20% de descuento todos los productos</p>
     </header>
     <div class="heroes">
-        <img src="./img/Icon/logo-heroes.png" alt="logo-heroes">
-        <h1>Nombre tienda</h1>
+        <div class="nav-logo">
+            <img src="./img/Icon/logo-heroes.png" alt="logo-heroes">
+            <h1>Nombre tienda</h1>
+        </div>
+        <nav class="nav-heroes">
+            <ul>
+                <li>
+                    Contacto
+                </li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </nav>
     </div>
     <main>
         <section class="container-cards">
@@ -22,12 +38,19 @@
                     <img src="./img/Icon/like.png" alt="me gusta" class="corazon">
                 </div>
                 <article class="box-bottom">
-                    <img src="./img/badman.png" alt="batman" class="selfie">
-                    <h2>BATMAN</h2>
-                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
-                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
-                    </p>
-                    <button>Ver más</button>
+                    <div>
+                        <img src="./img/badman.png" alt="batman" class="selfie">
+                    </div>
+                    <div class="content-box">
+                        <h2>BATMAN</h2>
+                        <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman,
+                            Detective
+                            Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de
+                            Nightwing.
+                        </p>
+                        <button class="btn-card">Ver más</button>
+                    </div>
+
                 </article>
             </div>
             <div class="card">
@@ -39,14 +62,14 @@
                         <img src="./img/harley.png" alt="harley" class="selfie">
                     </div>
 
-                    <div>
+                    <div class="content-box">
                         <h2>Harley Quinn</h2>
                         <p>La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor
                             estadounidense
                             Paul Dini para modificar una escena del vigésimo-segundo episodio de Batman: la serie
                             animada
                         </p>
-                        <button>Ver más</button>
+                        <button class="btn-card ">Ver más</button>
                     </div>
 
                 </article>
@@ -56,14 +79,28 @@
                     <img src="./img/Icon/like.png" alt="me gusta" class="corazon">
                 </div>
                 <article class="box-bottom">
-                    <img src="./img/wonderWoman.png" alt="wonderWoman" class="selfie">
-                    <h2>BATMAN</h2>
-                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
-                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
-                    </p>
-                    <button>Ver más</button>
+                    <div>
+                        <img src="./img/wonderWoman.png" alt="wonderWoman" class="selfie">
+                    </div>
+                    <div class="content-box">
+                        <h2>BATMAN</h2>
+                        <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman,
+                            Detective
+                            Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de
+                            Nightwing.
+                        </p>
+                        <button class="btn-card ">Ver más</button>
+
+                    </div>
+
                 </article>
             </div>
+
+            <button class="btn-card btn-add">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
 
         </section>
     </main>

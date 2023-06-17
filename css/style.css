@@ -29,15 +29,33 @@ main {
 
 .heroes {
     display: flex;
-    align-items: center;
     height: 80px;
     position: sticky;
     top: 0;
     background-color: #00669F;
-    padding: 30px 20px;
     box-shadow: 0px 3px 7px -3px rgb(0 0 0);
     z-index: 10;
     color: var(--color-primary);
+    flex-direction: column;
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-heroes {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 29, 45, 1);
+    width: 100%;
+}
+
+.nav-heroes ul {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    list-style: none;
 }
 
 
@@ -84,6 +102,14 @@ main {
 
 }
 
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
 .selfie {
     position: absolute;
     width: 100px;
@@ -100,12 +126,22 @@ main {
 
 }
 
-button {
+.btn-card {
     background-color: #00669F;
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-top: 2rem;
+}
 
+.btn-add {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .harley-top {
